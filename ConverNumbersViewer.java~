@@ -1,0 +1,19 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class ConverNumbersViewer {
+  public static void main ( String[] args ) {
+   JFrame frame = new JFrame();
+   JPanel panel = new ConvertNumbers();
+   frame.add( panel );
+   frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+   frame.setTitle( "Convert Numbers" );
+   frame.setResizable( true );
+   frame.setLocation( 50, 50 );
+   frame.setVisible( true );
+    
+  
+    
+    
+  }
+}

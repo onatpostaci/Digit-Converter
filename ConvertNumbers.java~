@@ -1,0 +1,66 @@
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class ConvertNumbers extends JPanel {
+   
+    
+    //properties
+    
+    //labels
+    private JLabel decimal;
+    private JLabel binary;
+    private JLabel hex;
+    
+    //textFields
+    private JTextField numField;
+    private JTextField binField;
+    private JTextField hexField;
+    
+    //panels
+    private JPanel stringPanel;
+    private JPanel intPanel;
+    
+    //constructor
+    public ConverNumbers(){
+       
+       //panel initilisation
+       stringPanel = new JPanel( new GridLayout( 3,1 ) );
+       intPanel = new JPanel( new GridLayout( 3, 1 ) );
+       
+       //adding panels
+       add( stringPanel, BorderLayout.WEST);
+       add( intPanel, BorderLayout.CENTER);
+       
+       //textField initilisation
+       numField = new JTextField( 15 );
+       binField = new JTextField( 15 );
+       hexField = new JTextField( 15 );
+       
+       //label initilisation
+       decimal = new JLabel( "Decimal: " );
+       hex = new JLabel( "Hex: " );
+       binary = new JLabel( "Binary: " );
+       
+       //adding 
+       stringPanel.add( decimal );
+       stringPanel.add( numField );
+       
+       stringPanel.add( hex );
+       stringPanel.add( hexField );
+       
+       stringPanel.add( binary );
+       stringPanel.add( binField );
+       
+      
+    }
+
+
+  
+
+}
